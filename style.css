@@ -1,0 +1,249 @@
+* {
+    
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background-image: url('img/wallpaper.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    height: 90vh;
+    overflow: hidden;
+}
+.fa-windows {
+    padding: 10px;
+}
+.fa-windows:hover {
+    background-color: rgb(57, 57, 57, .3)
+}
+
+/* NAVIGATION BAR TOP */
+
+.nav-top {
+    height: 40px;
+    margin: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+
+.nav-top i {
+    margin: 10px;
+}
+
+.nav-top-sx {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-top-sx p {
+    margin-top: 13px;
+}
+
+.nav-top-dx sup {
+    margin-left: -10px;
+    background-color: rgb(205, 133, 0);
+    border-radius: 50px;
+    padding: 3px 6px;
+    border: 1px solid rgb(201, 201, 201);
+}
+
+/* SEARCH BAR */
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    color: white;
+    background-color: rgb(57, 57, 57);
+    height: 60px;
+    max-width: 60rem;
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 30px;
+    margin-top: 20vh;
+    padding: 0 20px;
+}
+
+.search-bar input {
+    border-radius: 50px;
+    background-color: rgb(57, 57, 57);
+    border: 0;
+    color: white;
+    width: 90%;
+}
+
+.search-bar input:focus {
+    outline: none;
+}
+
+.search-bar input::placeholder {
+    color: rgb(201, 201, 201);
+}
+
+.search-bar i {
+    padding: 10px;
+}
+
+/* SEARCH INFO */
+
+.search-info {
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+}
+
+.search-info .p {
+    max-width: 310px;
+    padding: 10px;
+    margin: -5px 10px;
+}
+
+.search-info .p:hover {
+    background-color: rgb(57, 57, 57, .9);
+    border-radius: 3px;
+}
+
+.search-info .hidden {
+    opacity: 0;
+    font-size: 12px;
+}
+
+.search-info .p .hidden:hover {
+    opacity: 1;
+}
+
+
+.search-info .fa-magnifying-glass{
+    background-color: rgb(57, 57, 57);
+    height: 38px;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+
+
+/* NAV BOTTOM */
+
+.nav-bottom {
+    height: 40px;
+    width: 100%;
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(57, 57, 57, .5);
+    color: white;
+    position:absolute;
+    bottom: 0px;
+    font-size: 14px;
+    
+}
+
+.nav-bottom-sx {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink:0;
+}
+
+.fa-bars {
+    padding: 10%;
+}
+
+.nav-bottom-sx p {
+    margin: 15px;
+    
+}
+
+.nav-bottom i {
+    margin: 0 10px;
+}
+
+.nav-bottom-dx {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink:0;
+}
+
+.nav-bottom-dx button {
+    padding: 5px 15px;
+    margin: 0 5px;
+    color: white;
+    background-color: rgb(0,0,0,0);
+    border: 1px rgb(86, 86, 86) solid;
+    border-radius: 30px;
+}
+
+.nav-bottom-dx button i {
+    margin: 0 10px 0 0px;
+}
+
+.fa-angle-down {
+    padding-left: 60px;
+}
+
+.fa-bars-staggered {
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.fa-table-cells-large {
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 1500px) {
+    .nav-bottom-sx p:nth-child(8),
+    .nav-bottom-sx p:nth-child(9),
+    .nav-bottom-sx p:nth-child(10) {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1255px) {
+    .nav-bottom-sx p:nth-child(6),
+    .nav-bottom-sx p:nth-child(7) {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 943px) {
+    .nav-bottom-sx p:nth-child(2),
+    .nav-bottom-sx p:nth-child(3),
+    .nav-bottom-sx p:nth-child(4),
+    .nav-bottom-sx p:nth-child(5),
+    .nav-top-sx p,
+    .nav-top-sx i:nth-child(2),
+    .nav-top-sx i:nth-child(3),
+    .nav-top-sx i:nth-child(4),
+    .nav-top-dx .fa-medal{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 631px) {
+    .nav-bottom-sx p:nth-child(1),
+    .nav-bottom-dx button:nth-child(3) ,
+    .nav-bottom-dx .fa-table-cells-large,
+    .nav-bottom-dx .fa-bars-staggered{
+        display: none;
+    }
+    .nav-bottom-sx p:nth-child(2) {
+        display: contents;
+    }
+}

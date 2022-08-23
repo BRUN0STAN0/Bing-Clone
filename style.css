@@ -11,7 +11,6 @@ body {
     background-position: center;
     background-size: cover;
     height: 90vh;
-    overflow: hidden;
 }
 .fa-windows {
     padding: 10px;
@@ -101,6 +100,7 @@ body {
     display: flex;
     justify-content: center;
     margin-top: 10%;
+    position: relative;
 }
 
 .search-info .p {
@@ -145,8 +145,8 @@ body {
     justify-content: center;
     background-color: rgb(57, 57, 57, .5);
     color: white;
-    position:absolute;
-    bottom: 0px;
+    position: absolute;
+    bottom: 0vh;
     font-size: 14px;
     
 }
@@ -206,6 +206,31 @@ body {
     padding: 10px;
     border-radius: 5px;
 }
+
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    flex-wrap: wrap;
+    padding: 0 30px;
+    top: 100vh;
+    min-height: 100vh;
+    width: 100%;
+    background-color: black;
+}
+
+section div {
+    background-color: rgb(86, 86, 86, .5);
+    margin: 5px;
+    border-radius: 8px;
+    width: 300px;
+    height: 300px;
+}
+
+
+/* MEDIA SCREEN */
 
 @media screen and (max-width: 1500px) {
     .nav-bottom-sx p:nth-child(8),
